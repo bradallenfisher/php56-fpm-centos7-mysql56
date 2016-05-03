@@ -9,7 +9,7 @@ wget http://rpms.famillecollet.com/enterprise/remi-release-7.rpm
 rpm -Uvh remi-release-7.rpm
 
 # get latest mysql
-yum install -y http://dev.mysql.com/get/mysql-community-release-el7-5.noarch.rpm 
+yum install -y http://dev.mysql.com/get/mysql57-community-release-el7-8.noarch.rpm 
 yum install -y mysql mysql-server
 systemctl enable mysqld.service
 /bin/systemctl start  mysqld.service
