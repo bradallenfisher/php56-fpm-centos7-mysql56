@@ -1,4 +1,4 @@
 # Install Drush
-curl -sS https://getcomposer.org/installer | php
-sudo mv composer.phar /usr/local/bin/composer
-ln -s /usr/local/bin/composer /usr/bin/composer
+composer global require drush/drush:7.*	
+echo 'export PATH="$HOME/.config/composer/vendor/bin:$PATH"' >> $HOME/.bashrc
+source $HOME/.bashrc
